@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  color: white;
+}
+
+.button-container {
+  margin: 2rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.flip-button, .reset-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.flip-button {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.reset-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.flip-button:hover, .reset-button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.flip-button:disabled, .reset-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.results-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.results-container h2 {
+  margin-top: 0;
+  color: #4CAF50;
+}
+
+.results-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.results-container li {
+  padding: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.results-container li:last-child {
+  border-bottom: none;
+} 
